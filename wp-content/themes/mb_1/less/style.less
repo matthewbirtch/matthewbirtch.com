@@ -1,0 +1,227 @@
+/*
+Theme Name: matthewbirtch theme v1
+Theme URI: http://www.matthewbirtch.com/
+Description: Matthew Birtch's Main Word Press Theme
+Version: 1.0
+Author: Matthew Birtch
+Author URI: http://www.matthewbirtch.com/
+Tags: blue, custom theme
+*/
+
+/* VARIABLES */
+@black: #000;
+@bgcolor: #222;
+@white: #ffffff;
+@light_grey: #cccccc;
+@blue: #00aeef;
+@site_width: 960px;
+@ui_sprite: "images/ui_sprite.png";
+
+/* MIXINS */
+.box-shadow(@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.rounded(@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+
+/* RESETS */
+
+* { margin:0; padding:0; border:none; }
+
+
+/* TYPOGRAPHY */
+
+body { font-family: "freight-text-pro", serif; font-weight:400; color:@light_grey; background:@bgcolor; font-size:17px; line-height:1.5; }
+p { margin-bottom:15px;
+	&.dropCap:first-letter {float: left; font-size: 4em; line-height: .8em;	margin-right: 3px; padding: 2px; }
+	&.pullQuote { font-size: 1.6em; font-family: "Helvetica Neue", Helvetica, Arial; font-weight: 700; line-height: 1.1; color:@blue; margin-bottom:20px}
+}
+h1, h2, h4 { font-weight:400; text-shadow: -px -2px 1px rgba(0,0,0,.7) }
+h3, h5 { }
+h2 { margin-bottom:40px; font-family: "proxima-nova-alt", sans-serif; font-size: 40px; letter-spacing: -0.01em; color:@blue;  line-height:.9; 
+	span {
+		background:#ffffff; padding:10px
+	}
+}
+h4 { color:@blue }
+a { color:@blue;}
+			
+/* REUSABLE LESS CLASSES */
+.text_replacement { text-indent:-9999px; display:block; background:url(@ui_sprite) no-repeat;}
+.3column_text { -moz-column-count: 3;	-moz-column-gap: 20px; -webkit-column-count: 3;	-webkit-column-gap: 20px;	column-count: 3; column-gap: 20px;}
+.2column_text { -moz-column-count: 2;	-moz-column-gap: 20px; -webkit-column-count: 2;	-webkit-column-gap: 20px;	column-count: 2; column-gap: 20px;}
+.1column_text { -moz-column-count: 1;	-moz-column-gap: 0px; -webkit-column-count: 1;	-webkit-column-gap: 0px;	column-count: 1; column-gap: 00px;}
+
+.clear { clear:both; }
+
+#main_wrapper { width:100%;}
+
+body.admin-bar #header { top:28px }
+#header { background:@white; position:fixed; width:100%; top:0; z-index:999; .box-shadow(0px 5px 5px 0px rgba(0, 0, 0, .5));
+	#header_wrapper { padding:10px; height:23px; 
+		#logo { .text_replacement; background-position:0 0; width:181px; height:22px; float:left; margin-top:1px}
+		#header_right { float:right; padding-top:0px;}
+		#social_nav { float:left; margin-left:5px; margin-top:3px;
+			li { width:16px; height:16px; .text_replacement; float:left; margin-left:4px;
+				&.facebook { background-position: -254px 0}
+				&.twitter { background-position: -236px 0}
+				&.linkedin { background-position: -218px 0}
+				&.flickr { background-position: -200px 0}
+				a { display:block}									
+			}
+		}
+	}
+}
+
+#content_wrapper { margin-top:47px; }
+
+#search_bar { float:left; top: -2px; position:relative;
+	#searchsubmit { display:none;}
+	input[type="search"] { background:url(@ui_sprite) -280px 0px; width:172px; padding:4px 28px 4px 10px; 
+		&:focus { background-position: -280px -40px}
+	}
+}
+
+
+	#nav li.blog a { background-position: -500px -20px}
+	nav { float:left;
+		#nav li { float:left; list-style-type:none; padding-right:12px; background:url(@ui_sprite) right 0;
+			&:last-child { background:none}
+			a { display:block; .text_replacement; height:22px}
+			&.blog a{ width:41px; background-position: -500px 0;
+				&:hover { background-position: -500px -20px}
+			}
+			&.page-item-2 a{ width:82px; background-position: -560px 0;
+				&:hover { background-position: -560px -20px}
+			}
+			&.page-item-10 a{ width:60px; background-position: -660px 0;				
+				&:hover { background-position: -660px -20px}
+			}
+		}
+	}
+
+
+.post_navigation { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size:70%; padding:6px 6px 6px 45px; position:relative; background-color: #444; .box-shadow(0px 3px 3px 0px rgba(0, 0, 0, .5));text-transform:uppercase;
+	.expandCollapse { cursor:pointer; .text_replacement; background: url(@ui_sprite) 0 -40px; width:14px; height: 13px; float:left; }
+	.post_date { float:left; background:url(@ui_sprite) 0px -90px; width:32px; height:80px; padding: 11px 7px; position:absolute; top:-6px; left:5px;
+		.post_date_month, .post_date_date { text-shadow:-1px -1px 1px rgba(0,0,0,.4); font-weight:bold; color:@white; text-align:center; font-size:12px;}
+		.post_date_date { font-size:20px; line-height:.5}
+	}
+	.post_title { float:left; border-right:solid 1px rgba(255, 255, 255, .4); padding: 0 10px; }
+	.post_category {float:left; border-right:solid 1px rgba(255, 255, 255, .4); padding: 0 10px}
+	.post_tags { float: left; padding: 0 10px;
+		p { margin-bottom:0}
+	}
+	#prevnext_navigation { float:right;
+		li { float:left; margin-left:10px; padding-left:10px; list-style-type:none; border-left:solid 1px rgba(255,255,255,.4);
+			&:first-child{ border:none}
+		}
+	}
+}
+
+.post { width:100%; border-bottom: solid 1px rgba(255, 255, 255, .2); .box-shadow(0px 5px 5px 0px rgba(0, 0, 0, .5)); position:relative; z-index:99; background:#222;
+	&.category-music { }
+	.post_wrapper { padding:4%; width:600px; margin:auto;
+		.post_header { margin-bottom:20px; }
+		h2 { position: relative; left:-4px; 
+			a { text-decoration:none; color:@blue;
+				&:hover { color:@white; } 
+			}	
+		}
+		.post_footer { font-family: "nimbus-sans", sans-serif; font-size:80%; opacity:.7}
+		.entry { 
+			.hero_image { width:630px; margin: 0 10px 10px 0; background:#333; float:left; .box-shadow(0px 3px 3px 0px rgba(0, 0, 0, .5));}
+			.sub_image { width:310px; background:#333; margin:0 10px 10px 0; float:left; .box-shadow(0px 3px 3px 0px rgba(0, 0, 0, .5));} 
+		}
+		.post_tags { color:#888888;
+			a {
+				color:inherit;
+			}
+		}
+	}
+	&.post-61  { 
+		.post_content {
+			.3column_text;
+		}
+	}
+}
+#comments { margin-top:50px;
+	h3.comments_title {border-bottom:solid 1px rgba(255,255,255,.4); }
+	.comments_wrapper { padding:30px; margin:50px;}
+	.commentlist { 
+		li { list-style-type:none}
+	}
+	.comment { border-bottom: solid 1px rgba(255,255,255,.4); padding:20px 0;
+		.comment-info { float:left;  width:250px; 
+			.comment-author { font-family:nimbus-sans, sans-serif; font-weight:bold; font-size:20px;
+				a {text-decoration:none; color:inherit}
+			}
+			.comment-date { }
+		}
+		.comment-content { float:left; width: 500px;}
+		.comment-edit { float:right; width:50px; }
+		cite { font-style:normal;}
+	}
+}
+
+
+/* Tablet Layout*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	body { 
+		h2 { font-size: 50px; margin-bottom:30px;}
+	}
+	.post {
+			.post_wrapper { width:600px;
+				.entry {
+					.post_content { .2column_text	}
+				}
+			}
+		}
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 767px) {
+	
+	body { font-size:18px;
+		#search_bar {display:none}
+		#social_nav { display:none}
+		h2 { font-size:40px; margin-bottom:20px}
+		.post { padding-bottom:40px;
+			.post_wrapper { width:auto;
+				.entry {
+					img { width: 100%;}
+					.hero_image, .sub_image { width:100%; height: margin: 0 0px 10px 0; }
+					.post_content {.1column_text}
+				}
+			}
+		}
+		.post_navigation { font-family: "nimbus-sans", sans-serif; font-size:80%; border-bottom: solid 1px rgba(255, 255, 255, .4); padding:5px; margin:0 0 30px ; float:none;
+			.expandCollapse { display:none }
+			.post_date { padding-left:0; border-left:none; margin-right:10px; margin-left:0; font-size:12px; border:none }
+			.post_title { display:none }
+			.post_category { display:none}
+			.post_tags { display:none; }
+			#prevnext_navigation { display:block; position:fixed; bottom:0; height:40px; background:rgba(0,0,0,.75); width:100%; margin:0; padding:0; border-top: solid 1px rgba(255, 255, 255, .2);
+				li { margin:0; padding:0; position:absolute; border:none}
+				.next { right:0}
+				.prev a, .next a { width:30px; height: 30px; background:url(images/mobile_ui.png) 5px 5px; display:block; text-indent:-999px; padding:6px; border:none}
+				.next a { background-position: -25px 5px; }
+			}
+		}
+		
+		#comments { 
+			input, textarea { font-size:16px; padding:2.5%; .rounded(3px)}
+			input { width:95%; }
+			textarea { width:95%;}
+		}
+	}
+	
+}
+

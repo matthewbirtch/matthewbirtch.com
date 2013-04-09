@@ -1,0 +1,35 @@
+[06-Mar-2012 19:25:37] PHP Warning:  require(./wp-blog-header.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/mrbirtch/public_html/index.php on line 17
+[06-Mar-2012 19:25:37] PHP Warning:  require(./wp-blog-header.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/mrbirtch/public_html/index.php on line 17
+[06-Mar-2012 19:25:37] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required './wp-blog-header.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mrbirtch/public_html/index.php on line 17
+[12-May-2012 01:42:00] PHP Fatal error:  Call to undefined function  catch_first_image() in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 27
+[12-May-2012 01:42:37] PHP Fatal error:  Call to undefined function  catch_first_image() in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 27
+[12-May-2012 01:51:07] PHP Fatal error:  Cannot redeclare remove_images() (previously declared in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php:31) in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 31
+[12-May-2012 01:51:10] PHP Fatal error:  Cannot redeclare remove_images() (previously declared in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php:31) in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 31
+[12-May-2012 01:51:18] PHP Fatal error:  Cannot redeclare remove_images() (previously declared in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php:31) in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 31
+[12-May-2012 01:51:43] PHP Fatal error:  Cannot redeclare remove_images() (previously declared in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php:31) in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 31
+[12-May-2012 01:51:51] PHP Fatal error:  Cannot redeclare remove_images() (previously declared in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php:31) in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 31
+[12-May-2012 01:53:02] PHP Fatal error:  Call to undefined function  catch_that_image() in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 27
+[12-May-2012 01:53:29] PHP Fatal error:  Call to undefined function  catch_that_image() in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 27
+[12-May-2012 01:53:43] PHP Fatal error:  Call to undefined function  catch_that_image() in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 27
+[12-May-2012 01:53:45] PHP Fatal error:  Call to undefined function  catch_that_image() in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 27
+[12-May-2012 01:53:54] PHP Fatal error:  Call to undefined function  catch_that_image() in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 27
+[12-May-2012 01:55:11] PHP Fatal error:  Cannot redeclare remove_images() (previously declared in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php:31) in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 31
+[12-May-2012 01:55:22] PHP Fatal error:  Cannot redeclare remove_images() (previously declared in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php:31) in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 31
+[12-May-2012 02:18:43] PHP Parse error:  syntax error, unexpected $end in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 83
+[12-May-2012 02:19:25] PHP Parse error:  syntax error, unexpected $end in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 60
+[12-May-2012 02:20:12] PHP Parse error:  syntax error, unexpected $end in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 60
+[12-May-2012 02:20:21] PHP Parse error:  syntax error, unexpected $end in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 60
+[12-May-2012 02:20:34] PHP Parse error:  syntax error, unexpected $end in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 80
+[12-May-2012 02:21:29] PHP Parse error:  syntax error, unexpected $end in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 80
+[12-May-2012 02:21:30] PHP Parse error:  syntax error, unexpected $end in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 80
+[12-May-2012 02:22:06] PHP Parse error:  syntax error, unexpected $end in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 57
+[12-May-2012 02:25:12] PHP Parse error:  syntax error, unexpected $end in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 57
+[12-May-2012 02:30:06] PHP Fatal error:  Call to undefined function  prev_posts_link() in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 14
+[12-May-2012 02:33:00] PHP Parse error:  syntax error, unexpected T_STRING in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 14
+[12-May-2012 02:33:13] PHP Parse error:  syntax error, unexpected T_STRING in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 14
+[12-May-2012 02:40:11] PHP Parse error:  syntax error, unexpected T_STRING in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 14
+[12-May-2012 02:40:13] PHP Parse error:  syntax error, unexpected T_STRING in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 14
+[12-May-2012 02:44:02] PHP Fatal error:  Call to undefined function  get_adjacent_posts() in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 14
+[12-May-2012 02:47:23] PHP Parse error:  syntax error, unexpected ';' in /home/mrbirtch/public_html/wp-content/themes/mb_2/index.php on line 20
+[07-Jun-2012 01:07:56] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/mrbirtch/public_html/wp-content/themes/mb_2/sidebar.php on line 70
+[07-Jun-2012 01:08:21] PHP Parse error:  syntax error, unexpected T_ENDIF in /home/mrbirtch/public_html/wp-content/themes/mb_2/sidebar.php on line 71
